@@ -1,0 +1,125 @@
+\documentclass[12pt]{report}
+\usepackage{inputenc}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{MATH40011 Calculus for JMC 
+ \\ Revision Note}
+\author{Feifan Fan}
+
+
+\begin{document}
+\maketitle
+
+\chapter{Differentiation}
+
+\section{Basic Differentiation}
+
+\subsection{Parametric Graph Sketching}
+
+\emph{We are going to sketch a parametric curve $x = f(t)$, $y = g(t)$.}
+\newline
+
+\noindent Some basic rules:
+\begin{itemize}
+    \item Try to find the function $y = h(x)$ between $y$ and $x$
+    
+    and try to determine the symmetry of the curve: 
+    
+    i.e. determine whether $h(x) = h(-x)$ 
+    
+    \emph{(even function, curve is symmetrical about y axis)}
+
+    or $h(x) + h(-x) = 0$ 
+    
+    \emph{(odd function, curve is symmetrical about the origin)}
+    
+    or if we have $y^{2} = t(x) \implies y = \pm \sqrt{t(x)}$
+
+    \emph{(not a function, but curve is symmetrical about the x axis}
+
+    \emph{since a value of x points to two values with opposite signs)}
+    \item Find the zero points of the curve:
+    
+    Calculate the value of $t$ such that $y = g(t) = 0$, 
+    and calculate the correspnding value of x 
+    to get the zero point $(x, 0)$
+\end{itemize}
+Some special rules for the parametric curves:
+\begin{itemize}
+    \item Determine when the tangent line to the curve is \emph{horizontal} and \emph{vertical}:
+    \newpage
+    \emph{Horizontal:} find the value of t such that
+    $$
+    \frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} = 0
+    $$
+     \indent Hence, the tangent is horizontal if
+     $$
+    \frac{dy}{dt} =  g'(t) = 0 \text{ and }\frac{dx}{dt} = f'(t) \neq 0
+     $$
+     \emph{Vertical:} find the value of t such that
+     $$
+     \frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} = \pm \infty
+     $$
+     \indent Hence, the tangent is horizontal if
+     $$
+    \frac{dy}{dt} =  g'(t) \neq 0\text{ and } \frac{dx}{dt} = f'(t) = 0
+     $$
+    \item Determine at which points is the tangent line to the curve parallel to $y = x$:
+    \newline Since for the line $y = x$, $\frac{dy}{dx} = 1$,
+
+    Therefore, if the tangent line is parallel to y = x, 
+    $$
+    \frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} = 1
+    $$
+    \newline Hence, we have 
+    $$
+    g'(t) = \frac{dy}{dt} = \frac{dx}{dt} = f'(t)
+    \text{ where } g'(t) = f'(t) \neq 0$$
+    \item Find the limit of the gradient when t is close to 0:
+    \newline  $$
+    \lim_{t \to 0^+} \frac{dy}{dx} = \lim_{t \to 0^+} \frac{\frac{dy}{dt}}{\frac{dx}{dt}}
+    \text{ and }
+    \lim_{t \to 0^+} \frac{dy}{dx} = \lim_{t \to 0^+} \frac{\frac{dy}{dt}}{\frac{dx}{dt}}
+    $$
+    \item Similarly, find the limit of the gradinet when t tends to $\pm \infty$:
+    \newline $$
+    \lim_{t \to \pm \infty} \frac{dy}{dx} = \lim_{t \to \pm \infty} \frac{\frac{dy}{dt}}{\frac{dx}{dt}}
+    $$
+    
+    In conclusion, we can combine the elements above and find the "dirction" of $t$ to sketch the parametric curve. 
+\end{itemize}
+ 
+\newpage
+\emph{Example: Sketch the curve}
+$$
+\left\{\begin{array}{ll}
+x = t^2 
+\\ y = t^3 - t
+\end{array}\right.
+$$
+\indent in the cartesian plane.
+
+\begin{enumerate}
+    \item Firstly we know that $y = t^3 - t = t(t^2 - 1) = t(x - 1)$.
+    \newline And we squared y to get:
+    $$
+    y^2 = t^2(x - 1)^2 = x(x - 1)^2
+    $$
+    Therefore, 
+    $$
+    y = \pm \sqrt{x(x - 1)^2}
+    $$
+    Clearly this curve is symmetrical about x axis. (symmetry $\checkmark$)
+    \item 
+\end{enumerate}
+    
+
+
+\section{Differentiability \& Continuity of a function}
+
+
+\end{document} 
