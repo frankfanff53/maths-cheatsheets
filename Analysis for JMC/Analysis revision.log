@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2020.1.4)  30 MAR 2020 23:01
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/W32TeX) (preloaded format=xelatex 2020.1.4)  30 MAR 2020 23:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"Calculus Problem Sheet Revision"
-(./Calculus Problem Sheet Revision.tex
+**"Analysis revision"
+(./Analysis revision.tex
 LaTeX2e <2019-10-01> patch level 3
 (d:/texlive/2019/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2019/10/25 v1.4k Standard LaTeX document class
@@ -127,9 +127,8 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-No file "Calculus Problem Sheet Revision".aux.
-\openout1 = `"Calculus Problem Sheet Revision.aux"'.
+)) (./Analysis revision.aux)
+\openout1 = `"Analysis revision.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
@@ -145,6 +144,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -189,32 +189,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ]
-Chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-
- []
+No file "Analysis revision".toc.
+\tf@toc=\write3
+\openout3 = `"Analysis revision.toc"'.
 
 [1
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-[2] [3] (./Calculus Problem Sheet Revision.aux) ) 
+] (./Analysis revision.aux) ) 
 Here is how much of TeX's memory you used:
- 2363 strings out of 492473
- 28998 string characters out of 6132689
- 104551 words of memory out of 5000000
- 6848 multiletter control sequences out of 15000+600000
- 11617 words of font info for 57 fonts, out of 8000000 for 9000
+ 2323 strings out of 492473
+ 28239 string characters out of 6132689
+ 100537 words of memory out of 5000000
+ 6823 multiletter control sequences out of 15000+600000
+ 6279 words of font info for 30 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 30i,7n,31p,245b,183s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,6n,31p,231b,183s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Calculus Problem Sheet Revision.pdf (4 pages).
+Output written on Analysis revision.pdf (2 pages).
