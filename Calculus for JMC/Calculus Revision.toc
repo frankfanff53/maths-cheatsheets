@@ -1,9 +1,10 @@
 \contentsline {chapter}{\numberline {1}Differentiation}{2}%
 \contentsline {section}{\numberline {1.1}Basic Differentiation}{2}%
-\contentsline {subsection}{\numberline {1.1.1}Parametric Graph Sketching}{2}%
-\contentsline {section}{\numberline {1.2}Differentiability \& Continuity of a function}{6}%
-\contentsline {chapter}{\numberline {A}Code for Graph Sketching}{7}%
-\contentsline {section}{\numberline {A.1}Parametric Curve Sketching}{7}%
-\contentsline {section}{\numberline {A.2}False Position}{9}%
-\contentsline {section}{\numberline {A.3}Starting the Appendices}{9}%
-\contentsline {chapter}{\numberline {B}Another Appendix}{10}%
+\contentsline {subsection}{\numberline {1.1.1}Analysis of Parametised Variables}{2}%
+\contentsline {subsection}{\numberline {1.1.2}Parametric Graph Sketching}{3}%
+\contentsline {section}{\numberline {1.2}Differentiability \& Continuity of a function}{8}%
+\contentsline {chapter}{\numberline {A}Code for Graph Sketching}{9}%
+\contentsline {section}{\numberline {A.1}Parametric Curve Sketching}{9}%
+\contentsline {section}{\numberline {A.2}False Position}{11}%
+\contentsline {section}{\numberline {A.3}Starting the Appendices}{11}%
+\contentsline {chapter}{\numberline {B}Another Appendix}{12}%

@@ -50,9 +50,70 @@
 
 \section{Basic Differentiation}
 
+\subsection{Analysis of Parametised Variables}
+
+\emph{Given that a trajectory $f(x, y) = 0$, and the variables $x$, $y$ are 
+functions of time, $t$, how do we analyse the change of $x, y$ respect to $t$, at several specific points?
+(for example, what is the value of $\frac{dy}{dt}$ when $x = 0$?)}
+\newline
+
+\noindent Sometimes the trajectory have several distinct patterns that we are familiar with. 
+We can use them to find the parametric equations of $x, y$ first. 
+
+\noindent For example:
+\begin{itemize}
+    \item The equation of a circle:
+    $$
+    f(x, y) = (x - a)^2 + (y - b)^2  - r^2 = 0 
+    $$
+    We can easily find that $x - a = rcos\theta$ and $y - b = rsin\theta$. 
+    
+    Therefore, the parametric equations of $x, y$ are:
+    $$
+    \left\{
+        \begin{array}{l}
+            x = a + rcost\\
+            y = b + rsint
+        \end{array}
+    \right.
+    $$
+    \item The equation of an ellipse:
+    $$
+    f(x, y) = \frac{x^2}{a^2} + \frac{y^2}{b^2} - 1 = 0
+    $$
+    Similarly, we can get the parametric equations:
+    $$
+    \left\{
+        \begin{array}{l}
+            x = acost\\
+            y = bsint
+        \end{array}
+    \right.
+    $$
+\end{itemize}
+Obviously we can just find the value of t from the given value of $x$ or $y$, 
+and substitute the value into the formula of derivatives of $y$ (or $x$) to find the rate of change of the required variable. However\dots
+\newline
+
+\noindent We do have a general method of find the rate of change of the parametised variable(s) from a given value:
+
+\begin{itemize}
+    \item We have the expression of the trajectory, $f(x, y) = 0$. Therefore, the value of $\frac{dy}{dx}$ 
+    is really easy to get by implicit differenitation.
+    \item Since we have:
+    $$
+    \frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} = g(x, y)
+    $$
+    Therefore, from a given value of $x$ (or $y$), the relationship between $\frac{dy}{dt}$ and $\frac{dx}{dt}$ can be confirmed, 
+    in the form $\frac{dy}{dt} = k \frac{dx}{dt}$ where k is a constant. 
+    \item Using implicit differentiation again, but respect to $t$, we can get the relationship between x, y, $\frac{dx}{dt}$ and $\frac{dy}{dt}$
+    in the form of $h(x, y, \frac{dy}{dt}, \frac{dx}{dt}) = 0$.
+    \item Since we know the relationship betwen $\frac{dy}{dt}$ and $\frac{dx}{dt}$, and the value of x (or y) is given, so find the rate of change of the other variable at some specific point is just trivial.
+\end{itemize}
+
 \subsection{Parametric Graph Sketching}
 
-\emph{We are going to sketch a parametric curve $x = f(t)$, $y = g(t)$.}
+\emph{In this section, we are going to sketch a parametric curve $x = f(t)$, $y = g(t)$.}
 \newline
 
 \noindent Some basic rules:
@@ -83,7 +144,6 @@
 Some special rules for the parametric curves:
 \begin{itemize}
     \item Determine when the tangent line to the curve is \emph{horizontal} and \emph{vertical}:
-    \newpage
     \emph{Horizontal:} find the value of t such that
     $$
     \frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} = 0
@@ -92,6 +152,26 @@ Some special rules for the parametric curves:
      $$
     \frac{dy}{dt} =  g'(t) = 0 \text{ and }\frac{dx}{dt} = f'(t) \neq 0
      $$
+
+    Then we could calculate the value of t such that $h(t) = \frac{dy}{dx} = 0$, and find the corresponding value of $\frac{d^2y}{dx^2}$, which is expressed as:
+    $$
+    \frac{d^2y}{dx^2} = \frac{d}{dx}(\frac{dy}{dx}) = \frac{d}{dt}(h(t))\frac{dt}{dx}
+    $$
+    $$
+    = \frac{h'(t)}{\frac{dx}{dt}} = \frac{h'(t)}{f'(t)} 
+    $$
+
+    We substitute the value of the valud of $t$ into this formula, 
+    
+    and we can determine:
+    $$
+    \begin{array}{l}
+         \frac{d^2y}{dx^2} = \frac{h'(t)}{f'(t)} < 0 \implies \text{local maximum} \\
+         \frac{d^2y}{dx^2} = \frac{h'(t)}{f'(t)} = 0 \implies \text{inflection point} \\
+         \frac{d^2y}{dx^2} = \frac{h'(t)}{f'(t)} > 0 \implies \text{local minimum} \\
+    \end{array}
+    $$
+
      \emph{Vertical:} find the value of t such that
      $$
      \frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} = \pm \infty
@@ -125,7 +205,6 @@ Some special rules for the parametric curves:
     In conclusion, we can combine the elements above and find the "dirction" of $t$ to sketch the parametric curve. 
 \end{itemize}
  
-\newpage
 \emph{Example: Sketch the curve}
 $$
 \left\{\begin{array}{ll}
@@ -241,19 +320,33 @@ $$
     and/or it tends to $\pm \infty$:
 
     $$
-    \lim_{t \to 0^+} \frac{dy}{dx} = \lim_{t \to 0^+} \frac{3t^2 - 1}{2t}
+    \lim_{t \to 0^+} \frac{dy}{dx} = \lim_{t \to 0^+} \frac{3t^2 - 1}{2t} = - \infty
+    $$    $$
+    \lim_{t \to 0^-} \frac{dy}{dx} = \lim_{t \to 0^-} \frac{3t^2 - 1}{2t} =  \infty
+    $$  $$
+    \lim_{t \to \infty} \frac{dy}{dx} = \lim_{t \to \infty} \frac{3t^2 - 1}{2t} = \infty
+    $$   $$
+    \lim_{t \to -\infty} \frac{dy}{dx} = \lim_{t \to -\infty} \frac{3t^2 - 1}{2t} = - \infty
+    $$
+
+    Also since $x = t^2$, therefore,
+    $$
+    \lim_{t \to 0} x = \lim_{t \to 0} t^2 = 0
+    $$ $$
+    lim_{t \to \pm \infty} x = \lim_{t \to \pm \infty} t^2 = \infty
     $$
 
     \item In conclusion, we combine the elements together and plot the graph below:
+    
     \begin{figure}[h]
         \centering
         \includegraphics[scale = 0.6]{parametric-curve-sketching.png}
         \caption{the parametric curve with direction of gradients}    
     \end{figure}
+
+    \emph{Remark.} The direction of the red arrows on the graph indicates the direction of $\frac{dy}{dx}$, the gradient of the curve. These are good indcates in the graph sketching.
 \end{enumerate}
     
-
-
 \section{Differentiability \& Continuity of a function}
 
 
